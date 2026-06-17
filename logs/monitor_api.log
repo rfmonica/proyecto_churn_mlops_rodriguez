@@ -1,0 +1,970 @@
+2026-06-16 23:31:08,081 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 23:31:12,676 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 23:32:24,954 | ERROR | Error interno no controlado en /
+Traceback (most recent call last):
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\proyecto_churn_mlops_rodriguez\api\main.py", line 498, in registrar_solicitud
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 695, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 300, in serialize_response
+    raise ResponseValidationError(
+    ...<3 lines>...
+    )
+fastapi.exceptions.ResponseValidationError: 1 validation error:
+  {'type': 'string_type', 'loc': ('response', 'mejoras'), 'msg': 'Input should be a valid string', 'input': ['nivel_riesgo', 'recomendacion', 'timestamp', 'monitoreo']}
+
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\proyecto_churn_mlops_rodriguez\api\main.py", line 584, in inicio
+    GET /
+2026-06-16 23:32:25,776 | ERROR | Error interno no controlado en /
+Traceback (most recent call last):
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\proyecto_churn_mlops_rodriguez\api\main.py", line 498, in registrar_solicitud
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 695, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 300, in serialize_response
+    raise ResponseValidationError(
+    ...<3 lines>...
+    )
+fastapi.exceptions.ResponseValidationError: 1 validation error:
+  {'type': 'string_type', 'loc': ('response', 'mejoras'), 'msg': 'Input should be a valid string', 'input': ['nivel_riesgo', 'recomendacion', 'timestamp', 'monitoreo']}
+
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\proyecto_churn_mlops_rodriguez\api\main.py", line 584, in inicio
+    GET /
+2026-06-16 23:33:03,634 | INFO | Solicitud | metodo=GET | ruta=/health | estado=200 | latencia_ms=3.240
+2026-06-16 23:33:19,508 | INFO | Solicitud | metodo=GET | ruta=/metrics | estado=200 | latencia_ms=1.958
+2026-06-16 23:33:39,919 | INFO | Solicitud | metodo=GET | ruta=/docs | estado=200 | latencia_ms=0.635
+2026-06-16 23:33:40,095 | INFO | Solicitud | metodo=GET | ruta=/openapi.json | estado=200 | latencia_ms=19.172
+2026-06-16 23:34:05,995 | ERROR | Error interno no controlado en /
+Traceback (most recent call last):
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\proyecto_churn_mlops_rodriguez\api\main.py", line 498, in registrar_solicitud
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 695, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 300, in serialize_response
+    raise ResponseValidationError(
+    ...<3 lines>...
+    )
+fastapi.exceptions.ResponseValidationError: 1 validation error:
+  {'type': 'string_type', 'loc': ('response', 'mejoras'), 'msg': 'Input should be a valid string', 'input': ['nivel_riesgo', 'recomendacion', 'timestamp', 'monitoreo']}
+
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\proyecto_churn_mlops_rodriguez\api\main.py", line 584, in inicio
+    GET /
+2026-06-16 23:34:07,554 | ERROR | Error interno no controlado en /
+Traceback (most recent call last):
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\proyecto_churn_mlops_rodriguez\api\main.py", line 498, in registrar_solicitud
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 695, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 300, in serialize_response
+    raise ResponseValidationError(
+    ...<3 lines>...
+    )
+fastapi.exceptions.ResponseValidationError: 1 validation error:
+  {'type': 'string_type', 'loc': ('response', 'mejoras'), 'msg': 'Input should be a valid string', 'input': ['nivel_riesgo', 'recomendacion', 'timestamp', 'monitoreo']}
+
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\proyecto_churn_mlops_rodriguez\api\main.py", line 584, in inicio
+    GET /
+2026-06-16 23:36:21,267 | ERROR | Error interno no controlado en /
+Traceback (most recent call last):
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\proyecto_churn_mlops_rodriguez\api\main.py", line 498, in registrar_solicitud
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 695, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\.venv\Lib\site-packages\fastapi\routing.py", line 300, in serialize_response
+    raise ResponseValidationError(
+    ...<3 lines>...
+    )
+fastapi.exceptions.ResponseValidationError: 1 validation error:
+  {'type': 'string_type', 'loc': ('response', 'mejoras'), 'msg': 'Input should be a valid string', 'input': ['nivel_riesgo', 'recomendacion', 'timestamp', 'monitoreo']}
+
+  File "D:\MODULO 16\monicaproy\mlops_pruebas_rodriguez\proyecto_churn_mlops_rodriguez\api\main.py", line 584, in inicio
+    GET /
+2026-06-16 23:46:49,876 | INFO | 1 change detected
+2026-06-16 23:46:51,584 | INFO | 2 changes detected
+2026-06-16 23:46:58,845 | INFO | 5 changes detected
+2026-06-16 23:47:05,801 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 23:47:39,084 | INFO | 1 change detected
+2026-06-16 23:47:40,222 | INFO | 1 change detected
+2026-06-16 23:47:40,951 | INFO | 5 changes detected
+2026-06-16 23:48:05,232 | INFO | 1 change detected
+2026-06-16 23:48:06,234 | INFO | 5 changes detected
+2026-06-16 23:48:10,493 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 23:52:01,463 | INFO | 1 change detected
+2026-06-16 23:52:03,030 | INFO | 1 change detected
+2026-06-16 23:52:03,804 | INFO | 5 changes detected
+2026-06-16 23:52:09,830 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 23:53:04,096 | INFO | 1 change detected
+2026-06-16 23:53:05,433 | INFO | 1 change detected
+2026-06-16 23:53:07,151 | INFO | 1 change detected
+2026-06-16 23:53:13,215 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 23:53:14,483 | INFO | 7 changes detected
+2026-06-16 23:53:15,367 | INFO | 5 changes detected
+2026-06-16 23:53:20,755 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 23:53:48,095 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 23:53:52,551 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 23:54:56,067 | INFO | Solicitud | metodo=GET | ruta=/ | estado=200 | latencia_ms=9.673
+2026-06-16 23:55:05,135 | INFO | Solicitud | metodo=GET | ruta=/docs | estado=200 | latencia_ms=0.625
+2026-06-16 23:55:05,385 | INFO | Solicitud | metodo=GET | ruta=/openapi.json | estado=200 | latencia_ms=48.285
+2026-06-16 23:55:09,268 | INFO | Solicitud | metodo=GET | ruta=/metrics | estado=200 | latencia_ms=1.969
+2026-06-16 23:55:15,644 | INFO | Solicitud | metodo=GET | ruta=/health | estado=200 | latencia_ms=2.991
+2026-06-16 23:56:34,807 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.8700 | alertas=0 | nivel_riesgo=ALTO
+2026-06-16 23:56:34,811 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=29.014
+2026-06-16 23:56:37,001 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.8700 | alertas=0 | nivel_riesgo=ALTO
+2026-06-16 23:56:37,004 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=7.744
+2026-06-16 23:56:55,491 | INFO | Solicitud | metodo=GET | ruta=/metrics | estado=200 | latencia_ms=2.585
+2026-06-16 23:57:14,591 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.8375 | alertas=0 | nivel_riesgo=ALTO
+2026-06-16 23:57:14,594 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=5.301
+2026-06-16 23:57:28,844 | INFO | Solicitud | metodo=GET | ruta=/metrics | estado=200 | latencia_ms=4.311
+2026-06-16 23:58:45,025 | WARNING | Error de validación | ruta=/predict | detalle=[{'type': 'value_error', 'loc': ('body', 'reclamos'), 'msg': 'Value error, Clientes con 180 meses de antigüedad y 35 reclamos es un patrón inusual', 'input': 35, 'ctx': {'error': ValueError('Clientes con 180 meses de antigüedad y 35 reclamos es un patrón inusual')}}]
+2026-06-16 23:58:45,027 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=422 | latencia_ms=8.410
+2026-06-17 00:00:10,907 | INFO | Solicitud | metodo=GET | ruta=/docs | estado=200 | latencia_ms=0.630
+2026-06-17 00:00:11,118 | INFO | Solicitud | metodo=GET | ruta=/openapi.json | estado=200 | latencia_ms=0.611
+2026-06-17 00:00:22,422 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.8700 | alertas=0 | nivel_riesgo=ALTO
+2026-06-17 00:00:22,425 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=5.987
+2026-06-17 00:00:23,976 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.8700 | alertas=0 | nivel_riesgo=ALTO
+2026-06-17 00:00:24,028 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=54.775
+2026-06-17 00:02:14,949 | INFO | Solicitud | metodo=GET | ruta=/docs | estado=200 | latencia_ms=0.597
+2026-06-17 00:02:15,121 | INFO | Solicitud | metodo=GET | ruta=/openapi.json | estado=200 | latencia_ms=1.387
+2026-06-17 00:30:42,789 | WARNING | Error de validación | ruta=/predict | detalle=[{'type': 'value_error', 'loc': ('body', 'reclamos'), 'msg': 'Value error, Clientes con 180 meses de antigüedad y 35 reclamos es un patrón inusual', 'input': 35, 'ctx': {'error': ValueError('Clientes con 180 meses de antigüedad y 35 reclamos es un patrón inusual')}}]
+2026-06-17 00:30:42,791 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=422 | latencia_ms=2.610
+2026-06-17 00:31:05,261 | WARNING | Error de validación | ruta=/predict | detalle=[{'type': 'value_error', 'loc': ('body', 'reclamos'), 'msg': 'Value error, Clientes con 180 meses de antigüedad y 35 reclamos es un patrón inusual', 'input': 35, 'ctx': {'error': ValueError('Clientes con 180 meses de antigüedad y 35 reclamos es un patrón inusual')}}]
+2026-06-17 00:31:05,261 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=422 | latencia_ms=1.506
+2026-06-17 00:31:20,516 | INFO | Solicitud | metodo=GET | ruta=/metrics | estado=200 | latencia_ms=7.427
+2026-06-17 00:32:26,750 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.8700 | alertas=0 | nivel_riesgo=ALTO
+2026-06-17 00:32:26,752 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=3.941
+2026-06-17 00:35:19,653 | INFO | Solicitud | metodo=GET | ruta=/docs | estado=200 | latencia_ms=0.548
+2026-06-17 00:35:19,818 | INFO | Solicitud | metodo=GET | ruta=/openapi.json | estado=200 | latencia_ms=0.379
+2026-06-17 00:35:52,323 | WARNING | Error de validación | ruta=/predict | detalle=[{'type': 'missing', 'loc': ('body', 'reclamos'), 'msg': 'Field required', 'input': {'antiguedad': 36, 'cargo_mensual': 60.5}}]
+2026-06-17 00:35:52,324 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=422 | latencia_ms=2.102
+2026-06-17 00:36:38,377 | WARNING | Error de validación | ruta=/predict | detalle=[{'type': 'missing', 'loc': ('body', 'reclamos'), 'msg': 'Field required', 'input': {'antiguedad': 36, 'cargo_mensual': 60.5}}]
+2026-06-17 00:36:38,378 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=422 | latencia_ms=1.714
+2026-06-17 00:36:53,701 | WARNING | Error de validación | ruta=/predict | detalle=[{'type': 'greater_than_equal', 'loc': ('body', 'cargo_mensual'), 'msg': 'Input should be greater than or equal to 0', 'input': -50, 'ctx': {'ge': 0.0}}]
+2026-06-17 00:36:53,702 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=422 | latencia_ms=8.825
+2026-06-17 00:38:07,403 | INFO | Solicitud | metodo=GET | ruta=/health | estado=200 | latencia_ms=1.322
+2026-06-17 00:38:11,922 | INFO | Solicitud | metodo=GET | ruta=/docs | estado=200 | latencia_ms=0.339
+2026-06-17 00:38:12,101 | INFO | Solicitud | metodo=GET | ruta=/openapi.json | estado=200 | latencia_ms=0.765
+2026-06-17 00:38:16,494 | INFO | Solicitud | metodo=GET | ruta=/ | estado=200 | latencia_ms=1.129
+2026-06-17 00:38:38,172 | INFO | Solicitud | metodo=GET | ruta=/docs | estado=200 | latencia_ms=0.564
+2026-06-17 00:38:38,349 | INFO | Solicitud | metodo=GET | ruta=/openapi.json | estado=200 | latencia_ms=0.715
+2026-06-17 00:38:39,643 | INFO | Solicitud | metodo=GET | ruta=/ | estado=200 | latencia_ms=1.499
+2026-06-17 00:38:43,364 | INFO | Solicitud | metodo=GET | ruta=/metrics | estado=200 | latencia_ms=2.303
+2026-06-17 00:40:54,257 | INFO | 1 change detected
+2026-06-17 00:40:54,709 | INFO | 1 change detected
+2026-06-17 00:40:55,077 | INFO | 1 change detected
+2026-06-17 00:40:55,436 | INFO | 1 change detected
+2026-06-17 00:40:55,799 | INFO | 1 change detected
+2026-06-17 00:40:56,160 | INFO | 1 change detected
+2026-06-17 00:40:56,522 | INFO | 1 change detected
+2026-06-17 00:40:56,884 | INFO | 1 change detected
+2026-06-17 00:40:57,248 | INFO | 1 change detected
+2026-06-17 00:40:57,609 | INFO | 1 change detected
+2026-06-17 00:40:57,966 | INFO | 1 change detected
+2026-06-17 00:40:58,333 | INFO | 1 change detected
+2026-06-17 00:40:58,692 | INFO | 1 change detected
+2026-06-17 00:40:59,057 | INFO | 1 change detected
+2026-06-17 00:40:59,429 | INFO | 1 change detected
+2026-06-17 00:40:59,799 | INFO | 1 change detected
+2026-06-17 00:41:00,163 | INFO | 1 change detected
+2026-06-17 00:41:00,523 | INFO | 1 change detected
+2026-06-17 00:41:00,885 | INFO | 1 change detected
+2026-06-17 00:41:01,250 | INFO | 1 change detected
+2026-06-17 00:41:01,610 | INFO | 1 change detected
+2026-06-17 00:41:02,028 | INFO | 1 change detected
+2026-06-17 00:41:02,458 | INFO | 1 change detected
+2026-06-17 00:41:02,820 | INFO | 1 change detected
+2026-06-17 00:41:03,181 | INFO | 1 change detected
+2026-06-17 00:41:03,555 | INFO | 1 change detected
+2026-06-17 00:41:03,914 | INFO | 1 change detected
+2026-06-17 00:41:04,276 | INFO | 1 change detected
+2026-06-17 00:41:04,639 | INFO | 1 change detected
+2026-06-17 00:41:04,997 | INFO | 1 change detected
+2026-06-17 00:41:05,357 | INFO | 1 change detected
+2026-06-17 00:41:05,714 | INFO | 1 change detected
+2026-06-17 00:41:06,076 | INFO | 1 change detected
+2026-06-17 00:41:06,433 | INFO | 1 change detected
+2026-06-17 00:41:06,813 | INFO | 1 change detected
+2026-06-17 00:41:07,195 | INFO | 1 change detected
+2026-06-17 00:41:07,548 | INFO | 1 change detected
+2026-06-17 00:41:07,908 | INFO | 1 change detected
+2026-06-17 00:41:08,269 | INFO | 1 change detected
+2026-06-17 00:41:08,628 | INFO | 1 change detected
+2026-06-17 00:41:08,995 | INFO | 1 change detected
+2026-06-17 00:41:09,349 | INFO | 1 change detected
+2026-06-17 00:41:09,711 | INFO | 1 change detected
+2026-06-17 00:41:10,073 | INFO | 1 change detected
+2026-06-17 00:41:10,434 | INFO | 1 change detected
+2026-06-17 00:41:10,796 | INFO | 1 change detected
+2026-06-17 00:41:11,163 | INFO | 1 change detected
+2026-06-17 00:41:11,519 | INFO | 1 change detected
+2026-06-17 00:41:11,879 | INFO | 1 change detected
+2026-06-17 00:41:12,243 | INFO | 1 change detected
+2026-06-17 00:41:12,597 | INFO | 1 change detected
+2026-06-17 00:41:12,961 | INFO | 1 change detected
+2026-06-17 00:41:13,318 | INFO | 1 change detected
+2026-06-17 00:41:13,678 | INFO | 1 change detected
+2026-06-17 00:41:14,043 | INFO | 1 change detected
+2026-06-17 00:41:14,399 | INFO | 1 change detected
+2026-06-17 00:41:14,768 | INFO | 1 change detected
+2026-06-17 00:41:15,134 | INFO | 1 change detected
+2026-06-17 00:41:15,493 | INFO | 1 change detected
+2026-06-17 00:41:15,849 | INFO | 1 change detected
+2026-06-17 00:41:16,210 | INFO | 1 change detected
+2026-06-17 00:41:16,579 | INFO | 1 change detected
+2026-06-17 00:41:16,942 | INFO | 1 change detected
+2026-06-17 00:41:17,311 | INFO | 1 change detected
+2026-06-17 00:41:17,668 | INFO | 1 change detected
+2026-06-17 00:41:18,023 | INFO | 1 change detected
+2026-06-17 00:41:18,384 | INFO | 1 change detected
+2026-06-17 00:41:18,743 | INFO | 1 change detected
+2026-06-17 00:41:19,100 | INFO | 1 change detected
+2026-06-17 00:41:19,459 | INFO | 1 change detected
+2026-06-17 00:41:19,819 | INFO | 1 change detected
+2026-06-17 00:41:20,180 | INFO | 1 change detected
+2026-06-17 00:41:20,540 | INFO | 1 change detected
+2026-06-17 00:41:20,897 | INFO | 1 change detected
+2026-06-17 00:41:21,255 | INFO | 1 change detected
+2026-06-17 00:41:21,614 | INFO | 1 change detected
+2026-06-17 00:41:21,972 | INFO | 1 change detected
+2026-06-17 00:41:22,332 | INFO | 1 change detected
+2026-06-17 00:41:22,688 | INFO | 1 change detected
+2026-06-17 00:41:23,043 | INFO | 1 change detected
+2026-06-17 00:41:23,405 | INFO | 1 change detected
+2026-06-17 00:41:23,765 | INFO | 1 change detected
+2026-06-17 00:41:24,126 | INFO | 1 change detected
+2026-06-17 00:41:24,483 | INFO | 1 change detected
+2026-06-17 00:41:24,844 | INFO | 1 change detected
+2026-06-17 00:41:25,202 | INFO | 1 change detected
+2026-06-17 00:41:25,560 | INFO | 1 change detected
+2026-06-17 00:41:25,919 | INFO | 1 change detected
+2026-06-17 00:41:26,279 | INFO | 1 change detected
+2026-06-17 00:41:26,634 | INFO | 1 change detected
+2026-06-17 00:41:26,994 | INFO | 1 change detected
+2026-06-17 00:41:27,353 | INFO | 1 change detected
+2026-06-17 00:41:27,714 | INFO | 1 change detected
+2026-06-17 00:41:28,072 | INFO | 1 change detected
+2026-06-17 00:41:28,427 | INFO | 1 change detected
+2026-06-17 00:41:28,787 | INFO | 1 change detected
+2026-06-17 00:41:29,145 | INFO | 1 change detected
+2026-06-17 00:41:29,503 | INFO | 1 change detected
+2026-06-17 00:41:29,873 | INFO | 1 change detected
+2026-06-17 00:41:30,268 | INFO | 1 change detected
+2026-06-17 00:41:30,627 | INFO | 1 change detected
+2026-06-17 00:41:30,985 | INFO | 1 change detected
+2026-06-17 00:41:31,347 | INFO | 1 change detected
+2026-06-17 00:41:31,706 | INFO | 1 change detected
+2026-06-17 00:41:32,062 | INFO | 1 change detected
+2026-06-17 00:41:32,420 | INFO | 1 change detected
+2026-06-17 00:41:32,778 | INFO | 1 change detected
+2026-06-17 00:41:33,138 | INFO | 1 change detected
+2026-06-17 00:41:33,495 | INFO | 1 change detected
+2026-06-17 00:41:33,854 | INFO | 1 change detected
+2026-06-17 00:41:34,215 | INFO | 1 change detected
+2026-06-17 00:41:34,573 | INFO | 1 change detected
+2026-06-17 00:41:34,932 | INFO | 1 change detected
+2026-06-17 00:41:35,286 | INFO | 1 change detected
+2026-06-17 00:41:35,647 | INFO | 1 change detected
+2026-06-17 00:41:36,005 | INFO | 1 change detected
+2026-06-17 00:41:36,361 | INFO | 1 change detected
+2026-06-17 00:41:36,720 | INFO | 1 change detected
+2026-06-17 00:41:37,082 | INFO | 1 change detected
+2026-06-17 00:41:37,442 | INFO | 1 change detected
+2026-06-17 00:41:37,800 | INFO | 1 change detected
+2026-06-17 00:41:38,156 | INFO | 1 change detected
+2026-06-17 00:41:38,516 | INFO | 1 change detected
+2026-06-17 00:41:38,876 | INFO | 1 change detected
+2026-06-17 00:41:39,232 | INFO | 1 change detected
+2026-06-17 00:41:39,591 | INFO | 1 change detected
+2026-06-17 00:41:39,947 | INFO | 1 change detected
+2026-06-17 00:41:40,339 | INFO | 1 change detected
+2026-06-17 00:41:40,702 | INFO | 1 change detected
+2026-06-17 00:41:41,064 | INFO | 1 change detected
+2026-06-17 00:41:41,419 | INFO | 1 change detected
+2026-06-17 00:41:41,779 | INFO | 1 change detected
+2026-06-17 00:41:42,138 | INFO | 1 change detected
+2026-06-17 00:41:42,495 | INFO | 1 change detected
+2026-06-17 00:41:42,854 | INFO | 1 change detected
+2026-06-17 00:41:43,212 | INFO | 1 change detected
+2026-06-17 00:41:43,570 | INFO | 1 change detected
+2026-06-17 00:41:43,929 | INFO | 1 change detected
+2026-06-17 00:41:44,289 | INFO | 1 change detected
+2026-06-17 00:41:44,648 | INFO | 1 change detected
+2026-06-17 00:41:45,005 | INFO | 1 change detected
+2026-06-17 00:41:45,367 | INFO | 1 change detected
+2026-06-17 00:41:45,725 | INFO | 1 change detected
+2026-06-17 00:41:46,086 | INFO | 1 change detected
+2026-06-17 00:41:46,445 | INFO | 1 change detected
+2026-06-17 00:41:46,801 | INFO | 1 change detected
+2026-06-17 00:41:47,159 | INFO | 1 change detected
+2026-06-17 00:41:47,518 | INFO | 1 change detected
+2026-06-17 00:41:47,873 | INFO | 1 change detected
+2026-06-17 00:41:48,232 | INFO | 1 change detected
+2026-06-17 00:41:48,588 | INFO | 1 change detected
+2026-06-17 00:41:48,944 | INFO | 1 change detected
+2026-06-17 00:41:49,305 | INFO | 1 change detected
+2026-06-17 00:41:49,665 | INFO | 1 change detected
+2026-06-17 00:41:50,022 | INFO | 1 change detected
+2026-06-17 00:41:50,382 | INFO | 1 change detected
+2026-06-17 00:41:50,739 | INFO | 1 change detected
+2026-06-17 00:41:51,096 | INFO | 1 change detected
+2026-06-17 00:41:51,459 | INFO | 1 change detected
+2026-06-17 00:41:51,827 | INFO | 1 change detected
+2026-06-17 00:41:52,183 | INFO | 1 change detected
+2026-06-17 00:41:52,546 | INFO | 1 change detected
+2026-06-17 00:41:52,901 | INFO | 1 change detected
+2026-06-17 00:41:53,265 | INFO | 1 change detected
+2026-06-17 00:41:53,625 | INFO | 1 change detected
+2026-06-17 00:41:53,995 | INFO | 1 change detected
+2026-06-17 00:41:54,374 | INFO | 1 change detected
+2026-06-17 00:41:54,729 | INFO | 1 change detected
+2026-06-17 00:41:55,092 | INFO | 1 change detected
+2026-06-17 00:41:55,451 | INFO | 1 change detected
+2026-06-17 00:41:55,812 | INFO | 1 change detected
+2026-06-17 00:41:56,181 | INFO | 1 change detected
+2026-06-17 00:41:56,537 | INFO | 1 change detected
+2026-06-17 00:41:56,896 | INFO | 1 change detected
+2026-06-17 00:41:57,257 | INFO | 1 change detected
+2026-06-17 00:41:57,619 | INFO | 1 change detected
+2026-06-17 00:41:57,980 | INFO | 1 change detected
+2026-06-17 00:41:58,342 | INFO | 1 change detected
+2026-06-17 00:41:58,723 | INFO | 1 change detected
+2026-06-17 00:41:59,083 | INFO | 1 change detected
+2026-06-17 00:41:59,441 | INFO | 1 change detected
+2026-06-17 00:41:59,804 | INFO | 1 change detected
+2026-06-17 00:42:00,161 | INFO | 1 change detected
+2026-06-17 00:42:00,524 | INFO | 1 change detected
+2026-06-17 00:42:00,880 | INFO | 1 change detected
+2026-06-17 00:42:01,238 | INFO | 1 change detected
+2026-06-17 00:42:01,644 | INFO | 1 change detected
+2026-06-17 00:42:02,014 | INFO | 1 change detected
+2026-06-17 00:42:02,376 | INFO | 1 change detected
+2026-06-17 00:42:02,735 | INFO | 1 change detected
+2026-06-17 00:42:03,095 | INFO | 1 change detected
+2026-06-17 00:42:03,450 | INFO | 1 change detected
+2026-06-17 00:42:03,809 | INFO | 1 change detected
+2026-06-17 00:42:04,178 | INFO | 1 change detected
+2026-06-17 00:42:04,535 | INFO | 1 change detected
+2026-06-17 00:42:04,935 | INFO | 1 change detected
+2026-06-17 00:42:05,302 | INFO | 1 change detected
+2026-06-17 00:42:05,661 | INFO | 1 change detected
+2026-06-17 00:42:06,022 | INFO | 1 change detected
+2026-06-17 00:42:06,379 | INFO | 1 change detected
+2026-06-17 00:42:06,738 | INFO | 1 change detected
+2026-06-17 00:42:07,095 | INFO | 1 change detected
+2026-06-17 00:42:07,451 | INFO | 1 change detected
+2026-06-17 00:42:07,809 | INFO | 1 change detected
+2026-06-17 00:42:08,165 | INFO | 1 change detected
+2026-06-17 00:42:08,528 | INFO | 1 change detected
+2026-06-17 00:42:08,884 | INFO | 1 change detected
+2026-06-17 00:42:09,240 | INFO | 1 change detected
+2026-06-17 00:42:09,596 | INFO | 1 change detected
+2026-06-17 00:42:09,957 | INFO | 1 change detected
+2026-06-17 00:42:10,315 | INFO | 1 change detected
+2026-06-17 00:42:10,672 | INFO | 1 change detected
+2026-06-17 00:42:11,027 | INFO | 1 change detected
+2026-06-17 00:42:11,384 | INFO | 1 change detected
+2026-06-17 00:42:11,747 | INFO | 1 change detected
+2026-06-17 00:42:12,105 | INFO | 1 change detected
+2026-06-17 00:42:12,463 | INFO | 1 change detected
+2026-06-17 00:42:12,819 | INFO | 1 change detected
+2026-06-17 00:42:13,178 | INFO | 1 change detected
+2026-06-17 00:42:13,535 | INFO | 1 change detected
+2026-06-17 00:42:13,895 | INFO | 1 change detected
+2026-06-17 00:42:14,253 | INFO | 1 change detected
+2026-06-17 00:42:14,611 | INFO | 1 change detected
+2026-06-17 00:42:14,982 | INFO | 1 change detected
+2026-06-17 00:42:15,341 | INFO | 1 change detected
+2026-06-17 00:42:15,700 | INFO | 1 change detected
+2026-06-17 00:42:16,060 | INFO | 1 change detected
+2026-06-17 00:42:16,416 | INFO | 1 change detected
+2026-06-17 00:42:16,775 | INFO | 1 change detected
+2026-06-17 00:42:17,138 | INFO | 1 change detected
+2026-06-17 00:42:17,493 | INFO | 1 change detected
+2026-06-17 00:42:17,850 | INFO | 1 change detected
+2026-06-17 00:42:18,211 | INFO | 1 change detected
+2026-06-17 00:42:18,570 | INFO | 1 change detected
+2026-06-17 00:42:18,927 | INFO | 1 change detected
+2026-06-17 00:42:19,288 | INFO | 1 change detected
+2026-06-17 00:42:19,648 | INFO | 1 change detected
+2026-06-17 00:42:20,006 | INFO | 1 change detected
+2026-06-17 00:42:20,364 | INFO | 1 change detected
+2026-06-17 00:42:20,721 | INFO | 1 change detected
+2026-06-17 00:42:21,080 | INFO | 1 change detected
+2026-06-17 00:42:21,440 | INFO | 1 change detected
+2026-06-17 00:42:21,798 | INFO | 1 change detected
+2026-06-17 00:42:22,161 | INFO | 1 change detected
+2026-06-17 00:42:22,518 | INFO | 1 change detected
+2026-06-17 00:42:22,880 | INFO | 1 change detected
+2026-06-17 00:42:23,244 | INFO | 1 change detected
+2026-06-17 00:42:23,601 | INFO | 1 change detected
+2026-06-17 00:42:23,957 | INFO | 1 change detected
+2026-06-17 00:42:24,314 | INFO | 1 change detected
+2026-06-17 00:42:24,675 | INFO | 1 change detected
+2026-06-17 00:42:25,032 | INFO | 1 change detected
+2026-06-17 00:42:25,391 | INFO | 1 change detected
+2026-06-17 00:42:25,750 | INFO | 1 change detected
+2026-06-17 00:42:26,107 | INFO | 1 change detected
+2026-06-17 00:42:26,467 | INFO | 1 change detected
+2026-06-17 00:42:26,825 | INFO | 1 change detected
+2026-06-17 00:42:27,180 | INFO | 1 change detected
+2026-06-17 00:42:27,540 | INFO | 1 change detected
+2026-06-17 00:42:27,896 | INFO | 1 change detected
+2026-06-17 00:42:28,257 | INFO | 1 change detected
+2026-06-17 00:42:28,616 | INFO | 1 change detected
+2026-06-17 00:42:28,978 | INFO | 1 change detected
+2026-06-17 00:42:29,332 | INFO | 1 change detected
+2026-06-17 00:42:29,689 | INFO | 1 change detected
+2026-06-17 00:42:30,047 | INFO | 1 change detected
+2026-06-17 00:42:30,406 | INFO | 1 change detected
+2026-06-17 00:42:30,766 | INFO | 1 change detected
+2026-06-17 00:42:31,158 | INFO | 1 change detected
+2026-06-17 00:42:31,558 | INFO | 1 change detected
+2026-06-17 00:42:31,919 | INFO | 1 change detected
+2026-06-17 00:42:32,279 | INFO | 1 change detected
+2026-06-17 00:42:32,636 | INFO | 1 change detected
+2026-06-17 00:42:32,992 | INFO | 1 change detected
+2026-06-17 00:42:33,349 | INFO | 1 change detected
+2026-06-17 00:42:33,707 | INFO | 1 change detected
+2026-06-17 00:42:34,063 | INFO | 1 change detected
+2026-06-17 00:42:34,421 | INFO | 1 change detected
+2026-06-17 00:42:34,780 | INFO | 1 change detected
+2026-06-17 00:42:35,135 | INFO | 1 change detected
+2026-06-17 00:42:35,493 | INFO | 1 change detected
+2026-06-17 00:42:35,853 | INFO | 1 change detected
+2026-06-17 00:42:36,211 | INFO | 1 change detected
+2026-06-17 00:42:36,572 | INFO | 1 change detected
+2026-06-17 00:42:36,930 | INFO | 1 change detected
+2026-06-17 00:42:37,289 | INFO | 1 change detected
+2026-06-17 00:42:37,651 | INFO | 1 change detected
+2026-06-17 00:42:38,011 | INFO | 1 change detected
+2026-06-17 00:42:38,373 | INFO | 1 change detected
+2026-06-17 00:42:38,731 | INFO | 1 change detected
+2026-06-17 00:42:39,086 | INFO | 1 change detected
+2026-06-17 00:42:39,447 | INFO | 1 change detected
+2026-06-17 00:42:39,802 | INFO | 1 change detected
+2026-06-17 00:42:40,164 | INFO | 1 change detected
+2026-06-17 00:42:40,522 | INFO | 1 change detected
+2026-06-17 00:42:40,892 | INFO | 1 change detected
+2026-06-17 00:42:41,251 | INFO | 1 change detected
+2026-06-17 00:42:41,611 | INFO | 1 change detected
+2026-06-17 00:42:41,971 | INFO | 1 change detected
+2026-06-17 00:42:42,326 | INFO | 1 change detected
+2026-06-17 00:42:42,682 | INFO | 1 change detected
+2026-06-17 00:42:43,041 | INFO | 1 change detected
+2026-06-17 00:42:43,402 | INFO | 1 change detected
+2026-06-17 00:42:43,761 | INFO | 1 change detected
+2026-06-17 00:42:44,119 | INFO | 1 change detected
+2026-06-17 00:42:44,478 | INFO | 1 change detected
+2026-06-17 00:42:44,835 | INFO | 1 change detected
+2026-06-17 00:42:45,196 | INFO | 1 change detected
+2026-06-17 00:42:45,557 | INFO | 1 change detected
+2026-06-17 00:42:45,913 | INFO | 1 change detected
+2026-06-17 00:42:46,272 | INFO | 1 change detected
+2026-06-17 00:42:46,629 | INFO | 1 change detected
+2026-06-17 00:42:46,989 | INFO | 1 change detected
+2026-06-17 00:42:47,346 | INFO | 1 change detected
+2026-06-17 00:42:47,703 | INFO | 1 change detected
+2026-06-17 00:42:48,061 | INFO | 1 change detected
+2026-06-17 00:42:48,421 | INFO | 1 change detected
+2026-06-17 00:42:48,781 | INFO | 1 change detected
+2026-06-17 00:42:49,138 | INFO | 1 change detected
+2026-06-17 00:42:49,495 | INFO | 1 change detected
+2026-06-17 00:42:49,854 | INFO | 1 change detected
+2026-06-17 00:42:50,215 | INFO | 1 change detected
+2026-06-17 00:42:50,573 | INFO | 1 change detected
+2026-06-17 00:42:50,939 | INFO | 1 change detected
+2026-06-17 00:42:51,310 | INFO | 1 change detected
+2026-06-17 00:42:51,667 | INFO | 1 change detected
+2026-06-17 00:42:52,032 | INFO | 1 change detected
+2026-06-17 00:42:52,389 | INFO | 1 change detected
+2026-06-17 00:42:52,751 | INFO | 1 change detected
+2026-06-17 00:42:53,110 | INFO | 1 change detected
+2026-06-17 00:42:53,474 | INFO | 1 change detected
+2026-06-17 00:42:53,831 | INFO | 1 change detected
+2026-06-17 00:42:54,188 | INFO | 1 change detected
+2026-06-17 00:42:54,573 | INFO | 1 change detected
+2026-06-17 00:42:54,950 | INFO | 1 change detected
+2026-06-17 00:42:55,309 | INFO | 1 change detected
+2026-06-17 00:42:55,665 | INFO | 1 change detected
+2026-06-17 00:42:56,022 | INFO | 1 change detected
+2026-06-17 00:42:56,379 | INFO | 1 change detected
+2026-06-17 00:42:56,735 | INFO | 1 change detected
+2026-06-17 00:42:57,118 | INFO | 1 change detected
+2026-06-17 00:42:57,470 | INFO | 1 change detected
+2026-06-17 00:42:57,831 | INFO | 1 change detected
+2026-06-17 00:42:58,193 | INFO | 1 change detected
+2026-06-17 00:42:58,550 | INFO | 1 change detected
+2026-06-17 00:42:58,909 | INFO | 1 change detected
+2026-06-17 00:42:59,268 | INFO | 1 change detected
+2026-06-17 00:42:59,628 | INFO | 1 change detected
+2026-06-17 00:42:59,987 | INFO | 1 change detected
+2026-06-17 00:43:00,348 | INFO | 1 change detected
+2026-06-17 00:43:00,709 | INFO | 1 change detected
+2026-06-17 00:43:01,067 | INFO | 1 change detected
+2026-06-17 00:43:01,426 | INFO | 1 change detected
+2026-06-17 00:43:01,783 | INFO | 1 change detected
+2026-06-17 00:43:02,139 | INFO | 1 change detected
+2026-06-17 00:43:02,499 | INFO | 1 change detected
+2026-06-17 00:43:02,858 | INFO | 1 change detected
+2026-06-17 00:43:03,215 | INFO | 1 change detected
+2026-06-17 00:43:03,574 | INFO | 1 change detected
+2026-06-17 00:43:03,930 | INFO | 1 change detected
+2026-06-17 00:43:04,291 | INFO | 1 change detected
+2026-06-17 00:43:04,650 | INFO | 1 change detected
+2026-06-17 00:43:05,012 | INFO | 1 change detected
+2026-06-17 00:43:05,369 | INFO | 1 change detected
+2026-06-17 00:43:05,728 | INFO | 1 change detected
+2026-06-17 00:43:06,084 | INFO | 1 change detected
+2026-06-17 00:43:06,442 | INFO | 1 change detected
+2026-06-17 00:43:06,798 | INFO | 1 change detected
+2026-06-17 00:43:07,156 | INFO | 1 change detected
+2026-06-17 00:43:07,515 | INFO | 1 change detected
+2026-06-17 00:43:07,873 | INFO | 1 change detected
+2026-06-17 00:43:08,231 | INFO | 1 change detected
+2026-06-17 00:43:08,593 | INFO | 1 change detected
+2026-06-17 00:43:08,954 | INFO | 1 change detected
+2026-06-17 00:43:09,315 | INFO | 1 change detected
+2026-06-17 00:43:09,671 | INFO | 1 change detected
+2026-06-17 00:43:10,035 | INFO | 1 change detected
+2026-06-17 00:43:10,397 | INFO | 1 change detected
+2026-06-17 00:43:10,755 | INFO | 1 change detected
+2026-06-17 00:43:11,116 | INFO | 1 change detected
+2026-06-17 00:43:11,477 | INFO | 1 change detected
+2026-06-17 00:43:11,832 | INFO | 1 change detected
+2026-06-17 00:43:12,189 | INFO | 1 change detected
+2026-06-17 00:43:12,549 | INFO | 1 change detected
+2026-06-17 00:43:12,920 | INFO | 1 change detected
+2026-06-17 00:43:13,285 | INFO | 1 change detected
+2026-06-17 00:43:13,646 | INFO | 1 change detected
+2026-06-17 00:43:14,004 | INFO | 1 change detected
+2026-06-17 00:43:14,367 | INFO | 1 change detected
+2026-06-17 00:43:14,724 | INFO | 1 change detected
+2026-06-17 00:43:15,083 | INFO | 1 change detected
+2026-06-17 00:43:15,444 | INFO | 1 change detected
+2026-06-17 00:43:15,808 | INFO | 1 change detected
+2026-06-17 00:43:16,213 | INFO | 1 change detected
+2026-06-17 00:43:16,617 | INFO | 1 change detected
+2026-06-17 00:43:16,981 | INFO | 1 change detected
+2026-06-17 00:43:17,339 | INFO | 1 change detected
+2026-06-17 00:43:17,695 | INFO | 1 change detected
+2026-06-17 00:43:18,060 | INFO | 1 change detected
+2026-06-17 00:43:18,420 | INFO | 1 change detected
+2026-06-17 00:43:18,794 | INFO | 1 change detected
+2026-06-17 00:43:19,171 | INFO | 1 change detected
+2026-06-17 00:43:19,525 | INFO | 1 change detected
+2026-06-17 00:43:19,889 | INFO | 1 change detected
+2026-06-17 00:43:20,250 | INFO | 1 change detected
+2026-06-17 00:43:20,612 | INFO | 1 change detected
+2026-06-17 00:43:20,978 | INFO | 1 change detected
+2026-06-17 00:43:21,392 | INFO | 1 change detected
+2026-06-17 00:43:21,791 | INFO | 1 change detected
+2026-06-17 00:43:22,152 | INFO | 1 change detected
+2026-06-17 00:43:22,514 | INFO | 1 change detected
+2026-06-17 00:43:22,874 | INFO | 1 change detected
+2026-06-17 00:43:23,234 | INFO | 1 change detected
+2026-06-17 00:43:23,588 | INFO | 1 change detected
+2026-06-17 00:43:23,944 | INFO | 1 change detected
+2026-06-17 00:43:24,303 | INFO | 1 change detected
+2026-06-17 00:43:24,660 | INFO | 1 change detected
+2026-06-17 00:43:25,016 | INFO | 1 change detected
+2026-06-17 00:43:25,377 | INFO | 1 change detected
+2026-06-17 00:43:25,731 | INFO | 1 change detected
+2026-06-17 00:43:26,088 | INFO | 1 change detected
+2026-06-17 00:43:26,449 | INFO | 1 change detected
+2026-06-17 00:43:26,809 | INFO | 1 change detected
+2026-06-17 00:43:27,166 | INFO | 1 change detected
+2026-06-17 00:43:27,526 | INFO | 1 change detected
+2026-06-17 00:43:27,882 | INFO | 1 change detected
+2026-06-17 00:43:28,244 | INFO | 1 change detected
+2026-06-17 00:43:28,606 | INFO | 1 change detected
+2026-06-17 00:43:28,968 | INFO | 1 change detected
+2026-06-17 00:43:29,323 | INFO | 1 change detected
+2026-06-17 00:43:29,681 | INFO | 1 change detected
+2026-06-17 00:43:30,039 | INFO | 1 change detected
+2026-06-17 00:43:30,396 | INFO | 1 change detected
+2026-06-17 00:43:30,756 | INFO | 1 change detected
+2026-06-17 00:43:31,140 | INFO | 1 change detected
+2026-06-17 00:43:31,523 | INFO | 1 change detected
+2026-06-17 00:43:31,880 | INFO | 1 change detected
+2026-06-17 00:43:32,239 | INFO | 1 change detected
+2026-06-17 00:43:32,596 | INFO | 1 change detected
+2026-06-17 00:43:32,953 | INFO | 1 change detected
+2026-06-17 00:43:33,329 | INFO | 1 change detected
+2026-06-17 00:43:33,752 | INFO | 1 change detected
+2026-06-17 00:43:34,109 | INFO | 1 change detected
+2026-06-17 00:43:34,473 | INFO | 1 change detected
+2026-06-17 00:43:34,837 | INFO | 1 change detected
+2026-06-17 00:43:35,200 | INFO | 1 change detected
+2026-06-17 00:43:35,557 | INFO | 1 change detected
+2026-06-17 00:43:35,913 | INFO | 1 change detected
+2026-06-17 00:43:36,270 | INFO | 1 change detected
+2026-06-17 00:43:36,626 | INFO | 1 change detected
+2026-06-17 00:43:36,986 | INFO | 1 change detected
+2026-06-17 00:43:37,345 | INFO | 1 change detected
+2026-06-17 00:43:37,703 | INFO | 1 change detected
+2026-06-17 00:43:38,059 | INFO | 1 change detected
+2026-06-17 00:43:38,415 | INFO | 1 change detected
+2026-06-17 00:43:38,774 | INFO | 1 change detected
+2026-06-17 00:43:39,131 | INFO | 1 change detected
+2026-06-17 00:43:39,491 | INFO | 1 change detected
+2026-06-17 00:43:39,849 | INFO | 1 change detected
+2026-06-17 00:43:40,209 | INFO | 1 change detected
+2026-06-17 00:43:40,571 | INFO | 1 change detected
+2026-06-17 00:43:40,926 | INFO | 1 change detected
+2026-06-17 00:43:41,289 | INFO | 1 change detected
+2026-06-17 00:43:41,645 | INFO | 1 change detected
+2026-06-17 00:43:42,004 | INFO | 1 change detected
+2026-06-17 00:43:42,363 | INFO | 1 change detected
+2026-06-17 00:43:42,725 | INFO | 1 change detected
+2026-06-17 00:43:43,082 | INFO | 1 change detected
+2026-06-17 00:43:43,439 | INFO | 1 change detected
+2026-06-17 00:43:43,798 | INFO | 1 change detected
+2026-06-17 00:43:44,157 | INFO | 1 change detected
+2026-06-17 00:43:44,513 | INFO | 1 change detected
+2026-06-17 00:43:44,868 | INFO | 1 change detected
+2026-06-17 00:43:45,228 | INFO | 1 change detected
+2026-06-17 00:43:45,585 | INFO | 1 change detected
+2026-06-17 00:43:45,946 | INFO | 1 change detected
+2026-06-17 00:43:46,306 | INFO | 1 change detected
+2026-06-17 00:43:46,665 | INFO | 1 change detected
+2026-06-17 00:43:47,024 | INFO | 1 change detected
+2026-06-17 00:43:47,381 | INFO | 1 change detected
+2026-06-17 00:43:47,738 | INFO | 1 change detected
+2026-06-17 00:43:48,094 | INFO | 1 change detected
+2026-06-17 00:43:48,454 | INFO | 1 change detected
+2026-06-17 00:43:48,810 | INFO | 1 change detected
+2026-06-17 00:43:49,168 | INFO | 1 change detected
+2026-06-17 00:43:49,527 | INFO | 1 change detected
+2026-06-17 00:43:49,879 | INFO | 1 change detected
+2026-06-17 00:43:50,235 | INFO | 1 change detected
+2026-06-17 00:43:50,591 | INFO | 1 change detected
+2026-06-17 00:43:50,951 | INFO | 1 change detected
+2026-06-17 00:43:51,308 | INFO | 1 change detected
+2026-06-17 00:43:51,668 | INFO | 1 change detected
+2026-06-17 00:43:52,027 | INFO | 1 change detected
+2026-06-17 00:43:52,386 | INFO | 1 change detected
+2026-06-17 00:43:52,740 | INFO | 1 change detected
+2026-06-17 00:43:53,122 | INFO | 1 change detected
+2026-06-17 00:43:53,489 | INFO | 1 change detected
+2026-06-17 00:43:53,849 | INFO | 1 change detected
+2026-06-17 00:43:54,211 | INFO | 1 change detected
+2026-06-17 00:43:54,571 | INFO | 1 change detected
+2026-06-17 00:43:54,931 | INFO | 1 change detected
+2026-06-17 00:43:55,293 | INFO | 1 change detected
+2026-06-17 00:43:55,661 | INFO | 1 change detected
+2026-06-17 00:43:56,016 | INFO | 1 change detected
+2026-06-17 00:43:56,378 | INFO | 1 change detected
+2026-06-17 00:43:56,738 | INFO | 1 change detected
+2026-06-17 00:43:57,097 | INFO | 1 change detected
+2026-06-17 00:43:57,454 | INFO | 1 change detected
+2026-06-17 00:43:57,814 | INFO | 1 change detected
+2026-06-17 00:43:58,168 | INFO | 1 change detected
+2026-06-17 00:43:58,527 | INFO | 1 change detected
+2026-06-17 00:43:58,886 | INFO | 1 change detected
+2026-06-17 00:43:59,244 | INFO | 1 change detected
+2026-06-17 00:43:59,601 | INFO | 1 change detected
+2026-06-17 00:43:59,961 | INFO | 1 change detected
+2026-06-17 00:44:00,317 | INFO | 1 change detected
+2026-06-17 00:44:00,675 | INFO | 1 change detected
+2026-06-17 00:44:01,030 | INFO | 1 change detected
+2026-06-17 00:44:01,388 | INFO | 1 change detected
+2026-06-17 00:44:01,761 | INFO | 1 change detected
+2026-06-17 00:44:02,117 | INFO | 1 change detected
+2026-06-17 00:44:02,477 | INFO | 1 change detected
+2026-06-17 00:44:02,834 | INFO | 1 change detected
+2026-06-17 00:44:03,192 | INFO | 1 change detected
+2026-06-17 00:44:03,552 | INFO | 1 change detected
+2026-06-17 00:44:03,910 | INFO | 1 change detected
+2026-06-17 00:44:04,268 | INFO | 1 change detected
+2026-06-17 00:44:04,625 | INFO | 1 change detected
+2026-06-17 00:44:04,983 | INFO | 1 change detected
+2026-06-17 00:44:05,343 | INFO | 1 change detected
+2026-06-17 00:44:05,702 | INFO | 1 change detected
+2026-06-17 00:44:06,059 | INFO | 1 change detected
+2026-06-17 00:44:06,418 | INFO | 1 change detected
+2026-06-17 00:44:06,774 | INFO | 1 change detected
+2026-06-17 00:44:07,135 | INFO | 1 change detected
+2026-06-17 00:44:07,494 | INFO | 1 change detected
+2026-06-17 00:44:07,854 | INFO | 1 change detected
+2026-06-17 00:44:08,211 | INFO | 1 change detected
+2026-06-17 00:44:08,568 | INFO | 1 change detected
+2026-06-17 00:44:08,924 | INFO | 1 change detected
+2026-06-17 00:44:09,284 | INFO | 1 change detected
+2026-06-17 00:44:09,644 | INFO | 1 change detected
+2026-06-17 00:44:10,000 | INFO | 1 change detected
+2026-06-17 00:44:10,361 | INFO | 1 change detected
+2026-06-17 00:44:10,720 | INFO | 1 change detected
+2026-06-17 00:44:11,123 | INFO | 1 change detected
+2026-06-17 00:44:11,489 | INFO | 1 change detected
+2026-06-17 00:44:11,903 | INFO | 1 change detected
+2026-06-17 00:44:12,274 | INFO | 1 change detected
+2026-06-17 00:44:12,628 | INFO | 1 change detected
+2026-06-17 00:44:12,990 | INFO | 1 change detected
+2026-06-17 00:44:13,350 | INFO | 1 change detected
+2026-06-17 00:44:13,721 | INFO | 1 change detected
+2026-06-17 00:44:14,081 | INFO | 1 change detected
+2026-06-17 00:44:14,441 | INFO | 1 change detected
+2026-06-17 00:44:14,803 | INFO | 1 change detected
+2026-06-17 00:44:15,162 | INFO | 1 change detected
+2026-06-17 00:44:15,522 | INFO | 1 change detected
+2026-06-17 00:44:15,878 | INFO | 1 change detected
+2026-06-17 00:44:16,238 | INFO | 1 change detected
+2026-06-17 00:44:16,600 | INFO | 1 change detected
+2026-06-17 00:44:16,961 | INFO | 1 change detected
+2026-06-17 00:44:17,322 | INFO | 1 change detected
+2026-06-17 00:44:17,681 | INFO | 1 change detected
+2026-06-17 00:44:18,040 | INFO | 1 change detected
+2026-06-17 00:44:18,398 | INFO | 1 change detected
+2026-06-17 00:44:18,756 | INFO | 1 change detected
+2026-06-17 00:44:19,113 | INFO | 1 change detected
+2026-06-17 00:44:19,471 | INFO | 1 change detected
+2026-06-17 00:44:19,829 | INFO | 1 change detected
+2026-06-17 00:44:20,191 | INFO | 1 change detected
+2026-06-17 00:44:20,552 | INFO | 1 change detected
+2026-06-17 00:44:20,912 | INFO | 1 change detected
+2026-06-17 00:44:21,271 | INFO | 1 change detected
+2026-06-17 00:44:21,628 | INFO | 1 change detected
+2026-06-17 00:44:21,987 | INFO | 1 change detected
+2026-06-17 00:44:22,345 | INFO | 1 change detected
+2026-06-17 00:44:22,703 | INFO | 1 change detected
+2026-06-17 00:44:23,063 | INFO | 1 change detected
+2026-06-17 00:44:23,420 | INFO | 1 change detected
+2026-06-17 00:44:23,778 | INFO | 1 change detected
+2026-06-17 00:44:24,134 | INFO | 1 change detected
+2026-06-17 00:44:24,494 | INFO | 1 change detected
+2026-06-17 00:44:24,867 | INFO | 1 change detected
+2026-06-17 00:44:25,235 | INFO | 1 change detected
+2026-06-17 00:44:25,599 | INFO | 1 change detected
+2026-06-17 00:44:25,955 | INFO | 1 change detected
+2026-06-17 00:44:26,310 | INFO | 1 change detected
+2026-06-17 00:44:26,666 | INFO | 1 change detected
+2026-06-17 00:44:27,024 | INFO | 1 change detected
+2026-06-17 00:44:27,384 | INFO | 1 change detected
+2026-06-17 00:44:27,743 | INFO | 1 change detected
+2026-06-17 00:44:28,099 | INFO | 1 change detected
+2026-06-17 00:44:28,461 | INFO | 1 change detected
+2026-06-17 00:44:28,816 | INFO | 1 change detected
+2026-06-17 00:44:29,177 | INFO | 1 change detected
+2026-06-17 00:44:29,539 | INFO | 1 change detected
+2026-06-17 00:44:29,895 | INFO | 1 change detected
+2026-06-17 00:44:30,254 | INFO | 1 change detected
+2026-06-17 00:44:30,609 | INFO | 1 change detected
+2026-06-17 00:44:30,970 | INFO | 1 change detected
+2026-06-17 00:44:31,329 | INFO | 1 change detected
+2026-06-17 00:44:31,685 | INFO | 1 change detected
+2026-06-17 00:44:32,043 | INFO | 1 change detected
+2026-06-17 00:44:32,401 | INFO | 1 change detected
+2026-06-17 00:44:32,759 | INFO | 1 change detected
+2026-06-17 00:44:33,120 | INFO | 1 change detected
+2026-06-17 00:44:33,474 | INFO | 1 change detected
+2026-06-17 00:44:33,834 | INFO | 1 change detected
+2026-06-17 00:44:34,192 | INFO | 1 change detected
+2026-06-17 00:44:34,551 | INFO | 1 change detected
+2026-06-17 00:44:34,911 | INFO | 1 change detected
+2026-06-17 00:44:35,272 | INFO | 1 change detected
+2026-06-17 00:44:35,630 | INFO | 1 change detected
+2026-06-17 00:44:35,990 | INFO | 1 change detected
+2026-06-17 00:44:36,349 | INFO | 1 change detected
+2026-06-17 00:44:36,704 | INFO | 1 change detected
+2026-06-17 00:44:37,061 | INFO | 1 change detected
+2026-06-17 00:44:37,419 | INFO | 1 change detected
+2026-06-17 00:44:37,779 | INFO | 1 change detected
+2026-06-17 00:44:38,137 | INFO | 1 change detected
+2026-06-17 00:44:38,497 | INFO | 1 change detected
+2026-06-17 00:44:38,851 | INFO | 1 change detected
+2026-06-17 00:44:39,211 | INFO | 1 change detected
+2026-06-17 00:44:39,573 | INFO | 1 change detected
+2026-06-17 00:44:39,935 | INFO | 1 change detected
+2026-06-17 00:44:40,296 | INFO | 1 change detected
+2026-06-17 00:44:40,658 | INFO | 1 change detected
+2026-06-17 00:44:41,012 | INFO | 1 change detected
+2026-06-17 00:44:41,372 | INFO | 1 change detected
+2026-06-17 00:44:41,730 | INFO | 1 change detected
+2026-06-17 00:44:42,091 | INFO | 1 change detected
+2026-06-17 00:44:42,450 | INFO | 1 change detected
+2026-06-17 00:44:42,812 | INFO | 1 change detected
+2026-06-17 00:44:43,168 | INFO | 1 change detected
+2026-06-17 00:44:43,526 | INFO | 1 change detected
+2026-06-17 00:44:43,883 | INFO | 1 change detected
+2026-06-17 00:44:44,240 | INFO | 1 change detected
+2026-06-17 00:44:44,598 | INFO | 1 change detected
+2026-06-17 00:44:44,958 | INFO | 1 change detected
+2026-06-17 00:44:45,317 | INFO | 1 change detected
+2026-06-17 00:44:45,677 | INFO | 1 change detected
+2026-06-17 00:44:46,034 | INFO | 1 change detected
+2026-06-17 00:44:46,393 | INFO | 1 change detected
+2026-06-17 00:44:46,751 | INFO | 1 change detected
+2026-06-17 00:44:47,113 | INFO | 1 change detected
+2026-06-17 00:44:47,467 | INFO | 1 change detected
+2026-06-17 00:44:47,824 | INFO | 1 change detected
+2026-06-17 00:44:48,186 | INFO | 1 change detected
+2026-06-17 00:44:48,544 | INFO | 1 change detected
+2026-06-17 00:44:48,906 | INFO | 1 change detected
+2026-06-17 00:44:49,267 | INFO | 1 change detected
+2026-06-17 00:44:49,630 | INFO | 1 change detected
+2026-06-17 00:44:50,074 | INFO | 1 change detected
+2026-06-17 00:44:50,533 | INFO | 3 changes detected
+2026-06-17 00:44:52,837 | INFO | 1 change detected
+2026-06-17 00:45:11,810 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-17 00:47:06,941 | INFO | 1 change detected
+2026-06-17 00:47:07,991 | INFO | 1 change detected
+2026-06-17 00:47:13,052 | INFO | Modelo cargado correctamente: modelo_churn_v1
